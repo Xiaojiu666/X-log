@@ -26,9 +26,10 @@ class MainApp : Application() {
             val dir = baseContext.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS)
             val file = File(dir, "text.txt")
             addConsoleAdapter(
-                FileConsoleAdapter(true, file)
+                FileConsoleAdapter(true, file, true, "ABC")
             )
         }.build()
         XLog.initPrinterConfig(printerConfig)
+        XLog.e("MainApp")
     }
 }

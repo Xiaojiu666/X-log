@@ -16,7 +16,7 @@ data class HeaderInfo(
 ) {
     override fun toString(): String {
         val headerStringBuffer = StringBuffer()
-        headerStringBuffer.append("\n ----------------------------------------------- \n")
+        headerStringBuffer.append("----------------------------------------------- \n")
         headerStringBuffer.append("createTime $createTime \n")
         headerStringBuffer.append("deviceBrand $deviceBrand  \n")
         headerStringBuffer.append("deviceOsVersion $deviceOsVersion  \n")
